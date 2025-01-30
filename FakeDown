@@ -1,0 +1,26 @@
+✅ How This Script Works
+1️⃣ Asks the user for:
+
+The real website URL
+Keywords to check for fake sites
+TLDs to scan for suspicious domains
+2️⃣ Checks if fake sites exist in phishing databases (OpenPhish, URLhaus).
+3️⃣ Performs a WHOIS lookup to check domain registration.
+4️⃣ Scrapes and compares website content for similarity.
+5️⃣ Generates a PDF report if phishing is detected.
+
+✅ How to Run the Script
+1️⃣ Install dependencies:
+
+bash
+Copy
+Edit
+python3 -m pip install requests beautifulsoup4 python-whois pdfkit difflib html5lib
+2️⃣ Run the script:
+
+bash
+Copy
+Edit
+python3 phishing_detector.py
+3️⃣ Enter the real website, keywords, and TLDs when prompted.
+4️⃣ Phishing detection begins automatically!
