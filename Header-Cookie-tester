@@ -1,0 +1,11 @@
+This script performs a security audit of websites by scanning for missing or insecure HTTP headers and cookies. Here's what it does:
+
+Header Checks: It checks the presence of important security headers like Strict-Transport-Security, Content-Security-Policy, and X-Frame-Options. Missing headers are flagged, and enabled headers are displayed.
+
+Cookie Security: It inspects the cookies returned by the server to check if they have important security flags such as Secure, HttpOnly, and SameSite. The script prints detailed information about each cookie, including its name, value, domain, path, and expiration time.
+
+FQDN Resolution: The script resolves the Fully Qualified Domain Name (FQDN) of the target domain and displays it.
+
+HTTPS Enforcement: If the target URL is not using HTTPS, a warning is shown.
+
+Status Code Handling: If the server returns a 4xx or 5xx error, the script will inform the user and skip further checks for that website.
